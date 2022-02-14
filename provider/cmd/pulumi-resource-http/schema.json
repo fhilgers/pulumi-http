@@ -1,0 +1,156 @@
+{
+    "name": "http",
+    "version": "0.0.1",
+    "types": {
+        "http:index:Certificate": {
+            "type": "object",
+            "properties": {
+                "chain": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "privateKey": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "chain",
+                "privateKey"
+            ]
+        },
+        "http:index:Header": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        },
+        "http:index:Request": {
+            "type": "object",
+            "properties": {
+                "method": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "header": {
+                    "$ref": "#types/http:index:Header"
+                },
+                "body": {
+                    "type": "string"
+                },
+                "maxRetries": {
+                    "type": "number"
+                },
+                "retryWaitMin": {
+                    "type": "number"
+                },
+	            "retryWaitMax": {
+                    "type": "number"
+                },
+                "expectedStatusCode": {
+                    "type": "number"
+                },
+                "certificates": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "secret": true
+                    }
+                },
+                "rootCAs": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "serverName": {
+                    "type": "string"
+                },
+                "insecureSkipVerify": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "method",
+                "url"
+            ]
+        },
+        "http:index:Response": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string"
+                },
+                "statusCode": {
+                    "type": "integer"
+                },
+                "header": {
+                    "$ref": "#types/http:index:Header"
+                },
+                "body": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "status",
+                "statusCode",
+                "header",
+                "body"
+            ]
+        }
+    },
+    "resources": {
+        "http:index:Request": {
+            "properties": {
+                "create": {
+                    "$ref": "#types/http:index:Request"
+                },
+                "delete": {
+                    "$ref": "#types/http:index:Request"
+                },
+                "response": {
+                    "$ref": "#types/http:index:Response"
+                }
+            },
+            "required": [
+                "response"
+            ],
+            "inputProperties": {
+                "create": {
+                    "$ref": "#types/http:index:Request"
+                },
+                "delete": {
+                    "$ref": "#types/http:index:Request"
+                }
+            },
+            "requiredInputs": []
+        }
+    },
+    "language": {
+        "csharp": {
+            "packageReferences": {
+                "Pulumi": "3.*"
+            }
+        },
+        "go": {
+            "generateResourceContainerTypes": true,
+            "importBasePath": "github.com/felixhi/pulumi-http/sdk/go/http"
+        },
+        "nodejs": {
+            "dependencies": {
+                "@pulumi/pulumi": "^3.0.0"
+            }
+        },
+        "python": {
+            "requires": {
+                "pulumi": ">=3.0.0,<4.0.0"
+            }
+        }
+    }
+}

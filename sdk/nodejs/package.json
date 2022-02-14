@@ -1,5 +1,5 @@
 {
-    "name": "@pulumi/xyz",
+    "name": "@pulumi/http",
     "version": "${VERSION}",
     "scripts": {
         "build": "tsc"

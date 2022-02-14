@@ -6,16 +6,18 @@ from . import _utilities
 import typing
 # Export this package's modules as members:
 from .provider import *
-from .random import *
+from .request import *
+from ._inputs import *
+from . import outputs
 _utilities.register(
     resource_modules="""
 [
  {
-  "pkg": "xyz",
+  "pkg": "http",
   "mod": "index",
-  "fqn": "pulumi_xyz",
+  "fqn": "pulumi_http",
   "classes": {
-   "xyz:index:Random": "Random"
+   "http:index:Request": "Request"
   }
  }
 ]
@@ -23,9 +25,9 @@ _utilities.register(
     resource_packages="""
 [
  {
-  "pkg": "xyz",
-  "token": "pulumi:providers:xyz",
-  "fqn": "pulumi_xyz",
+  "pkg": "http",
+  "token": "pulumi:providers:http",
+  "fqn": "pulumi_http",
   "class": "Provider"
  }
 ]

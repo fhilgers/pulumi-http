@@ -1,0 +1,137 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2022-02-07T05:27:39.054458653+01:00",
+            "magic": "716f0bdad25b3b8e2145d2be034ba3ea4bdfb2c5330ba1d595d227e45289fbfd",
+            "version": "v3.24.1"
+        },
+        "secrets_providers": {
+            "type": "passphrase",
+            "state": {
+                "salt": "v1:vRgtaihtsG0=:v1:RBRFcX5qY6DeGiG9:E9/dP7GTeeUrS5MRMAOSzeBGRFvz5g=="
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:example::simple::pulumi:pulumi:Stack::simple-example",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "outputs": {
+                    "vault": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "v1:rJ4Nykc9YxIqxplS:DQzgrDRFEvCVm3SkRgOSJD17ufd6c0bmnv19qylBL7bGsvIRXxkGru7ZP4T4wZShBhcIEeY+hTjc0FILagpJrCYZeayBBJCrdH+uf6eyPSlp3ZclOMPmDuB44a0u3JYFbe1/MYJerFGFY8nfHh2+ur7wChDbf9J5dIjb46bnw7nQsTaeztnHj45+HypucIUp1c5MJ+TYhmIKYK+KfNmLhCcg2UAto7+FUogdA8qmaLQzSB4RNuTox34Wub6LTrqJFb3gS5llhgmml5L7sVvFJcx5vMNo2qd3TvvRPAvgbZdXZHgfKgBPdHjAWQUyBC+Wps4yffYmTaLRKifsXFj7x7bpTsUi1Oo1hgf3FXzQ+s/6Jsv7mXMtzssjF5HKxO+OzYgXeWal5AujRL1dzOQzXVAmy5lWwZwy8m5UZPyGjDhvlb2c00p9xScm/a/GKwFDIEdD5lW2wg1mMjO+tmv2ZLE5x7+yBakAp1drhHR40R5nRgNTqN3ems/x29CWqZFZ/5yiv6Q46FWNQUOHpUYlFZPm0/WtenD4RN6Pmy1LS1yc2rX2my/yyYxJYOqQf/Qe4hV7oKAuqK6kLJfuYa3CCogjE7NFwLZtph6UyGIFsLWfI3Nf/RG2C+JmIvnVjBATXxjT7rP6kv7gDSwXUzBc5TEmoDaHXG3GScsSsoUObYgX6NQsAb3Zrst3xGG2uSlffmr/EY4GJw7nGgz6mxtfTY5y9K7Vq6yqwILGGL2gBvZJIG4Dv/05T4P9BgsIAgGjX0XjUzHiwKGoeTmcDHMFOtCbamfwOrLa6MsnLBkcN35BQGo3kM7wmQF6493R+q8KDzzqr1ai2WywxAgm+/SdWcwix5+CCKIcA/uoVPiY4t3Vbl9EB+9nvoDWls1ICAiw7ZVekKDbZBDFRnfbxsuLYek0/T2yGLjfQvAsPV4vvJ7bknR82w=="
+                    }
+                },
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:example::simple::pulumi:providers:http::default_0_0_1_alpha_1643826701_a9282c7e_dirty",
+                "custom": true,
+                "id": "a354b5aa-6d6a-48ee-aaa5-0cb89db2aaf0",
+                "type": "pulumi:providers:http",
+                "inputs": {
+                    "version": "0.0.1-alpha.1643826701+a9282c7e.dirty"
+                },
+                "outputs": {
+                    "version": "0.0.1-alpha.1643826701+a9282c7e.dirty"
+                },
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:example::simple::http:index:Request::vault-init",
+                "custom": true,
+                "id": "96be6f5b",
+                "type": "http:index:Request",
+                "inputs": {
+                    "create": {
+                        "body": "{\"recovery_shares\":5,\"recovery_threshold\":3}",
+                        "certificates": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:RU0Qv8D8eYccBleK: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"
+                        },
+                        "maxRetries": 100,
+                        "method": "PUT",
+                        "retryWaitMax": 10,
+                        "retryWaitMin": 1,
+                        "rootCAs": [
+                            "-----BEGIN CERTIFICATE-----\nMIIBpzCCAU2gAwIBAgIBATAKBggqhkjOPQQDAjA7MQswCQYDVQQGEwJERTEaMBgG\nA1UECgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwHhcNMjIw\nMjA1MjExMzM3WhcNNDIwMjA1MjEyMzM3WjA7MQswCQYDVQQGEwJERTEaMBgGA1UE\nCgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAR7wdSZaAlWAQIky3Z1CIPdwZFY0s0WikRg6qjzKNGC\nuIFDk+kZJvpkgF8xfyjbuVvyXy9KCmAz0KMUL5VMwAoQo0IwQDAOBgNVHQ8BAf8E\nBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUcLImidFlSlbnyB2sy0c2\n5Zj1S2wwCgYIKoZIzj0EAwIDSAAwRQIhAIvxthFwflis4dv4Z3AwdlFGQ4CT9kso\nnUXxIK2XUVa4AiAbYNhFhMqcXgbKm56Wkn81H5I8dV6HAaexET3SNF4hlg==\n-----END CERTIFICATE-----"
+                        ],
+                        "url": "https://127.0.0.1:8200/v1/sys/init"
+                    },
+                    "delete": {
+                        "certificates": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:2rwFt/yaBLzshuLA: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"
+                        },
+                        "header": {
+                            "X-Vault-Token": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:893VxGJZY9+nS63A:XXwdpm1W12qJSPPdDCxDhRehwQMP9TJIGIeGJnEg03/tUVbANjOLl3l3NoUGmA=="
+                            }
+                        },
+                        "maxRetries": 100,
+                        "method": "PUT",
+                        "retryWaitMax": 10,
+                        "retryWaitMin": 1,
+                        "rootCAs": [
+                            "-----BEGIN CERTIFICATE-----\nMIIBpzCCAU2gAwIBAgIBATAKBggqhkjOPQQDAjA7MQswCQYDVQQGEwJERTEaMBgG\nA1UECgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwHhcNMjIw\nMjA1MjExMzM3WhcNNDIwMjA1MjEyMzM3WjA7MQswCQYDVQQGEwJERTEaMBgGA1UE\nCgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAR7wdSZaAlWAQIky3Z1CIPdwZFY0s0WikRg6qjzKNGC\nuIFDk+kZJvpkgF8xfyjbuVvyXy9KCmAz0KMUL5VMwAoQo0IwQDAOBgNVHQ8BAf8E\nBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUcLImidFlSlbnyB2sy0c2\n5Zj1S2wwCgYIKoZIzj0EAwIDSAAwRQIhAIvxthFwflis4dv4Z3AwdlFGQ4CT9kso\nnUXxIK2XUVa4AiAbYNhFhMqcXgbKm56Wkn81H5I8dV6HAaexET3SNF4hlg==\n-----END CERTIFICATE-----"
+                        ],
+                        "url": "https://127.0.0.1:8200/v1/sys/seal"
+                    }
+                },
+                "outputs": {
+                    "create": {
+                        "body": "{\"recovery_shares\":5,\"recovery_threshold\":3}",
+                        "certificates": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:UXH80WUXjQz3Hw2n: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"
+                        },
+                        "maxRetries": 100,
+                        "method": "PUT",
+                        "retryWaitMax": 10,
+                        "retryWaitMin": 1,
+                        "rootCAs": [
+                            "-----BEGIN CERTIFICATE-----\nMIIBpzCCAU2gAwIBAgIBATAKBggqhkjOPQQDAjA7MQswCQYDVQQGEwJERTEaMBgG\nA1UECgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwHhcNMjIw\nMjA1MjExMzM3WhcNNDIwMjA1MjEyMzM3WjA7MQswCQYDVQQGEwJERTEaMBgGA1UE\nCgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAR7wdSZaAlWAQIky3Z1CIPdwZFY0s0WikRg6qjzKNGC\nuIFDk+kZJvpkgF8xfyjbuVvyXy9KCmAz0KMUL5VMwAoQo0IwQDAOBgNVHQ8BAf8E\nBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUcLImidFlSlbnyB2sy0c2\n5Zj1S2wwCgYIKoZIzj0EAwIDSAAwRQIhAIvxthFwflis4dv4Z3AwdlFGQ4CT9kso\nnUXxIK2XUVa4AiAbYNhFhMqcXgbKm56Wkn81H5I8dV6HAaexET3SNF4hlg==\n-----END CERTIFICATE-----"
+                        ],
+                        "url": "https://127.0.0.1:8200/v1/sys/init"
+                    },
+                    "delete": {
+                        "certificates": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:UN/mdY9x8Y6wjkXa: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"
+                        },
+                        "header": {
+                            "X-Vault-Token": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:iN9E3zKitx2fneln:j9XEU1BAZlu142Yrt2sA7zvgokl+7j+1+QT7Oqm4FTC7OJWcJHk6bI7KmNtgFg=="
+                            }
+                        },
+                        "maxRetries": 100,
+                        "method": "PUT",
+                        "retryWaitMax": 10,
+                        "retryWaitMin": 1,
+                        "rootCAs": [
+                            "-----BEGIN CERTIFICATE-----\nMIIBpzCCAU2gAwIBAgIBATAKBggqhkjOPQQDAjA7MQswCQYDVQQGEwJERTEaMBgG\nA1UECgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwHhcNMjIw\nMjA1MjExMzM3WhcNNDIwMjA1MjEyMzM3WjA7MQswCQYDVQQGEwJERTEaMBgGA1UE\nCgwRRyZSIEN5YmVyc2VjdXJpdHkxEDAOBgNVBAMTB1Jvb3QgQ0EwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAR7wdSZaAlWAQIky3Z1CIPdwZFY0s0WikRg6qjzKNGC\nuIFDk+kZJvpkgF8xfyjbuVvyXy9KCmAz0KMUL5VMwAoQo0IwQDAOBgNVHQ8BAf8E\nBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUcLImidFlSlbnyB2sy0c2\n5Zj1S2wwCgYIKoZIzj0EAwIDSAAwRQIhAIvxthFwflis4dv4Z3AwdlFGQ4CT9kso\nnUXxIK2XUVa4AiAbYNhFhMqcXgbKm56Wkn81H5I8dV6HAaexET3SNF4hlg==\n-----END CERTIFICATE-----"
+                        ],
+                        "url": "https://127.0.0.1:8200/v1/sys/seal"
+                    },
+                    "response": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "v1:aIBn4xPztnMeExVv:jtTYAN6rdDuPM/JJsrZ92di3YlzZ7bfBFMEluVR4WWO/ZMia3AWWx0OwzF9MMuwhCzKUq3cwuhJLcMXBRTmD6/9uISsFC/HKTr3PVaSLK+a2T2uzQ0QNk8Egw1rWvOWDAJbT82zVLvsP3KHmkA+LWR43kX7c3lj/Jq29WBt4Q/V8LlUKSgAwQtQPCYQumCe93gIV6aLx/sSwd6GfGJ1Lm69P0KThqV4OIDWSmyishbDhtukCXwkWHJ5ZJ1Chr+6pFY4cnxSMk0jov46P6IYlPlrxVPJ0MQBjsAlSCq11BOcX6CV29t08Dg5he+IqUS47vPNSLyyYXpoTugwFfjC4Edah6oqLPt2w1hC92uDoyQguvI8WpJZPMeidXuK3oXD9CsmO6e0onUiTDRznAkV+wvWH8tKX/0e4WtqthUlTGIBrOs0JzPwUiYgY6BUEtnpKLP8j+q2LXiY+LjnANrVPaYazQ4OdPyMF+prjhg8MREwO6C5kHEYakvlxlbZMweLLU062ioiMTUuP2ZHN30Scx6sqjCX8eGGSIOMluJ+jYTEebrX4mUkRVVmBH+lG+PasrTrYtuzaZjP8QasosjR5Tyd3m20+yy+wgW2PiqVLoTEQl3953vcv1TLI3vb/hUaoif5JdDbilpx5ETrPI1dFthequ5YLftZVERPRt1d3iuzQFEXdRCFvrhsA7L/x5w0gGwXjsUdgzIifz/aQFfcen4Fe9fHIyir3ZSZjR/sXU+xJKSiL8k4yXu/wC+NLkjR/KfMyGQB/cgjQPJ6dNDRk4wToGFTVRjLdAXwNdingDcVX1EMJWKqeqXpCk9Rv+oNmWfZ3Vp9QyFO8yEurb9ZJCVRoC3jtEyx0tESf0nbw6XVJN0VvgNbb9kalK8UGiIAdDgQViFSqDIeg8DwcixGMiqY9fwtcWFyeTEvoFB9FyN9Z5TBCOuHquJpVz2YSkNMzoQKOwZ7obPV17QRvwa4d7/r6czG+9N5Mucs8/vP/NglkQ8K4uIksOZkHDPVCXkkoCwqumb8I8oQas2p+bIxKnK0YpKT5NEPjse7MfSYnyl4bV/+judUINsf8Evd/fbvQ/bF/E9P8JOwYaAzBkxAcHEaNVzyJZ4gUgraXJfgfTHtgllYDwpkHQh++vQKgy1j6JPgy/kgH0b+DOXbhjLMpf/LLEZXjLO7KcIoEUd3kPpkCorE0cWceNiMwaFrC8pb/cUhsE248DGseAAYRSR8Ez4VMmXIiykROswR2RrrTuPcYivwK82Bwm6o5wTJUEZvFkez9FMLb/MqRQyN9hUglNb1adWE6LtgK2YjTqzidB1Yz8HLHsEbR"
+                    }
+                },
+                "parent": "urn:pulumi:example::simple::pulumi:pulumi:Stack::simple-example",
+                "provider": "urn:pulumi:example::simple::pulumi:providers:http::default_0_0_1_alpha_1643826701_a9282c7e_dirty::a354b5aa-6d6a-48ee-aaa5-0cb89db2aaf0",
+                "propertyDependencies": {
+                    "create": null,
+                    "delete": null
+                },
+                "additionalSecretOutputs": [
+                    "response"
+                ],
+                "sequenceNumber": 1
+            }
+        ]
+    }
+}
